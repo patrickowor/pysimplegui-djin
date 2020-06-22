@@ -1,2 +1,2 @@
 # pysimplegui-djin
-A simple web guitar using Wolfram Alpha api
+A simple web gui using Wolfram Alpha api
