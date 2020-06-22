@@ -1,10 +1,10 @@
-import tkinter
+import tkinter # optional only use this if the program return a call back error 
 import PySimpleGUI as sg
 import wolframalpha 
 import os
 
 
-app_id = 'RGRY5Y-U6L4R38XLW'
+app_id = 'enter your App ID here'
 client = wolframalpha.Client(app_id)
 
 #the gui 
@@ -29,6 +29,7 @@ while True:
 	else:
 	    question =  values['__search__']
 	    try:
+                #getting my results and displaying it
 	        res = client.query(question)
 	        window['status'].update('loading...          ')
 	        answer = next(res.results).text
